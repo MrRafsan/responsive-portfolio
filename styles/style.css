@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 .header {
     background-color: #FFF8F3;
-    background-image: url('../images/headerbg.png'), url('../images/developerbg.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
 }
@@ -287,9 +287,12 @@ small p {
 
 @media screen and (max-width: 576px) {
 
-    .header{
-       background-image: none;
+    .header {
+        background-image: none;
     }
+
+    nav,
+    nav>ul,
     .banner,
     .skills-container,
     .resume-container,
@@ -298,11 +301,20 @@ small p {
         flex-direction: column;
     }
 
+    .banner,
     #what-i-do-description {
         padding: 20px;
     }
 
-    footer, .about-info-container {
+    .banner .profile-pic {
+        width: 100%;
+    }
+    .banner .profile-pic{
+        margin-top: 50px;
+    }
+
+    footer,
+    .about-info-container {
         padding: 10px;
     }
 
@@ -313,6 +325,10 @@ small p {
     .contact input,
     textarea {
         width: 80%;
+    }
+
+    .banner-title {
+        font-size: 50px;
     }
 }
 
